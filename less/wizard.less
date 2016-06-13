@@ -1,4 +1,10 @@
+@import (once) "vars";
+@import (once) "buttons";
+@import (once) "utils";
+
 .wizard {
+    position: relative;
+
     .steps {
         margin: 10px 0;
         padding: 20px;
@@ -46,7 +52,7 @@
             }
 
             &:disabled {
-                background-color: lighten(@gray, 10%) !important;
+                background-color: lighten(@gray, 10%) ;
             }
         }
     }
